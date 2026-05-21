@@ -276,6 +276,14 @@ h1.hero-title{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.0
     <button class="nav-btn" onclick="nav('d6')">Day 6</button>
     <button class="nav-btn" onclick="nav('d7')">Day 7</button>
     <button class="nav-btn" onclick="nav('d8')">Day 8</button>
+    <button class="nav-btn" onclick="nav('d9')">Day 9</button>
+    <button class="nav-btn" onclick="nav('d10')">Day 10</button>
+    <button class="nav-btn" onclick="nav('d11')">Day 11</button>
+    <button class="nav-btn" onclick="nav('d12')">Day 12</button>
+    <button class="nav-btn" onclick="nav('d13')">Day 13</button>
+    <button class="nav-btn" onclick="nav('d14')">Day 14</button>
+    <button class="nav-btn" onclick="nav('d15')">Day 15</button>
+    <button class="nav-btn" onclick="nav('d16')">Day 16</button>
     <button class="nav-btn" onclick="nav('interview')">Entrevistas</button>
     <button class="nav-btn" onclick="nav('certs')">Certs</button>
     <button class="nav-btn" onclick="nav('projects')">Projetos</button>
@@ -295,6 +303,14 @@ h1.hero-title{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.0
     <div class="phase-dot" id="dot5" onclick="nav('d6')" title="Day 6"></div>
     <div class="phase-dot" id="dot6" onclick="nav('d7')" title="Day 7"></div>
     <div class="phase-dot" id="dot7" onclick="nav('d8')" title="Day 8"></div>
+    <div class="phase-dot" id="dot8" onclick="nav('d9')" title="Day 9"></div>
+    <div class="phase-dot" id="dot9" onclick="nav('d10')" title="Day 10"></div>
+    <div class="phase-dot" id="dot10" onclick="nav('d11')" title="Day 11"></div>
+    <div class="phase-dot" id="dot11" onclick="nav('d12')" title="Day 12"></div>
+    <div class="phase-dot" id="dot12" onclick="nav('d13')" title="Day 13"></div>
+    <div class="phase-dot" id="dot13" onclick="nav('d14')" title="Day 14"></div>
+    <div class="phase-dot" id="dot14" onclick="nav('d15')" title="Day 15"></div>
+    <div class="phase-dot" id="dot15" onclick="nav('d16')" title="Day 16"></div>
   </div>
 </div>
 
@@ -303,7 +319,7 @@ h1.hero-title{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.0
 <!-- ══════════════════════════════════ HOME ══════════════════════════════════ -->
 <section id="section-home" class="section visible">
   <div id="hero">
-    <div class="hero-eyebrow">DESCOMPLICANDO KUBERNETES · 16 DAYS</div>
+    <div class="hero-eyebrow">DESCOMPLICANDO KUBERNETES · DAYS 1–16</div>
     <h1 class="hero-title">Aprenda <span class="grad">Kubernetes</span><br>do jeito certo</h1>
     <p class="hero-desc">Conteúdo aprofundado baseado no treinamento <strong>Descomplicando Kubernetes</strong> da LINUXtips — com explicações em prosa, exemplos reais do zero, conexões entre conceitos e quizzes com feedback técnico detalhado.</p>
     <button class="hero-cta" onclick="nav('d1')">▶ Começar no Day 1</button>
@@ -323,6 +339,16 @@ h1.hero-title{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.0
     <div class="day-card" onclick="nav('d6')"><div class="day-card-inner"><div class="day-icon d5">💾</div><div class="day-meta"><div class="day-title">Day 6 — Volumes no Kubernetes</div><div class="day-sub">EmptyDir · StorageClass · PersistentVolume · PVC · NFS · AWS EBS</div></div><span class="day-badge">ABERTO</span></div></div>
     <div class="day-card" onclick="nav('d7')"><div class="day-card-inner"><div class="day-icon d6">🔌</div><div class="day-meta"><div class="day-title">Day 7 — StatefulSets e Services</div><div class="day-sub">StatefulSet · Headless Service · ClusterIP · NodePort · LoadBalancer · Endpoints</div></div><span class="day-badge">ABERTO</span></div></div>
     <div class="day-card" onclick="nav('d8')"><div class="day-card-inner"><div class="day-icon d7">🔐</div><div class="day-meta"><div class="day-title">Day 8 — Secrets e ConfigMaps</div><div class="day-sub">Secrets · Base64 · Tipos · ConfigMaps · External Secrets Operator · Vault</div></div><span class="day-badge">ABERTO</span></div></div>
+
+    <div class="day-card" onclick="nav('d9')"><div class="day-card-inner"><div class="day-icon d3">🔒</div><div class="day-meta"><div class="day-title">Day 9 — Ingress Avançado e Cert-Manager</div><div class="day-sub">Annotations · Cert-Manager · Let\'s Encrypt · TLS automático · Labels vs Annotations</div></div><span class="day-badge">ABERTO</span></div></div>
+    <div class="day-card" onclick="nav('d10')"><div class="day-card-inner"><div class="day-icon d4">📊</div><div class="day-meta"><div class="day-title">Day 10 — Prometheus e ServiceMonitors</div><div class="day-sub">kube-prometheus-stack · ServiceMonitor · PodMonitor · Grafana · PrometheusRule</div></div><span class="day-badge">ABERTO</span></div></div>
+    <div class="day-card" onclick="nav('d11')"><div class="day-card-inner"><div class="day-icon d5">⛵</div><div class="day-meta"><div class="day-title">Day 11 — Helm Charts</div><div class="day-sub">Chart · Release · Repository · Values · Templates Go · Artifact Hub</div></div><span class="day-badge">ABERTO</span></div></div>
+    <div class="day-card" onclick="nav('d12')"><div class="day-card-inner"><div class="day-icon d6">🔐</div><div class="day-meta"><div class="day-title">Day 12 — RBAC Avançado e Pod Security</div><div class="day-sub">ServiceAccounts · ClusterRole · Pod Security Standards · Least Privilege</div></div><span class="day-badge">ABERTO</span></div></div>
+    <div class="day-card" onclick="nav('d13')"><div class="day-card-inner"><div class="day-icon d7">🛡️</div><div class="day-meta"><div class="day-title">Day 13 — Imagens Seguras: Wolfi e Distroless</div><div class="day-sub">Distroless · Wolfi OS · Chainguard · Trivy · CVE scanning · Supply Chain</div></div><span class="day-badge">ABERTO</span></div></div>
+    <div class="day-card" onclick="nav('d14')"><div class="day-card-inner"><div class="day-icon d0">🌐</div><div class="day-meta"><div class="day-title">Day 14 — Network Policies</div><div class="day-sub">Default deny · Ingress/Egress rules · Calico · Cilium · eBPF</div></div><span class="day-badge">ABERTO</span></div></div>
+    <div class="day-card" onclick="nav('d15')"><div class="day-card-inner"><div class="day-icon d2">📅</div><div class="day-meta"><div class="day-title">Day 15 — Taints, Tolerations e Affinity</div><div class="day-sub">NoSchedule · Node Affinity · Pod Anti-Affinity · TopologySpreadConstraints</div></div><span class="day-badge">ABERTO</span></div></div>
+    <div class="day-card" onclick="nav('d16')"><div class="day-card-inner"><div class="day-icon d3">🚀</div><div class="day-meta"><div class="day-title">Day 16 — K8s em Produção: Troubleshooting e GitOps</div><div class="day-sub">Debug · etcd backup · Upgrade · ArgoCD · GitOps · Boas práticas</div></div><span class="day-badge">ABERTO</span></div></div>
+
   </div>
 </section>
 
@@ -2108,7 +2134,7 @@ kubectl get svc -n ingress-nginx
             <span class="key">name</span>: <span class="val">frontend-svc</span>
             <span class="key">port</span>:
               <span class="key">number</span>: <span class="num">3000</span></pre></div>
-    <div class="callout tip"><span class="callout-icon">💡</span><p>Para TLS automático (Let's Encrypt), instale o <strong>cert-manager</strong> junto com o Ingress Controller. Com uma annotation (<code>cert-manager.io/cluster-issuer: letsencrypt-prod</code>), o cert-manager cuida automaticamente de provisionar e renovar os certificados TLS para cada domínio.</p></div>
+    <div class="callout tip"><span class="callout-icon">💡</span><p>Para TLS automático (Let\'s Encrypt), instale o <strong>cert-manager</strong> junto com o Ingress Controller. Com uma annotation (<code>cert-manager.io/cluster-issuer: letsencrypt-prod</code>), o cert-manager cuida automaticamente de provisionar e renovar os certificados TLS para cada domínio.</p></div>
   </div>
 
   <div id="d8-rbac" class="tab-panel">
@@ -2316,6 +2342,820 @@ k delete pod trava $now</pre></div>
   <div class="proj-list" id="projects-list"></div>
 </section>
 
+
+<!-- ═══ DAY CARDS 9-16 on HOME ═══ -->
+<!-- (injected via JS on render) -->
+
+<!-- ══════════════════════════════════ DAY 9 ══════════════════════════════════ -->
+<section id="section-d9" class="section">
+  <div class="day-page-header">
+    <div class="day-page-icon d3">🌐</div>
+    <div><div style="font-size:1.1rem;font-weight:800;letter-spacing:-0.02em;">Day 9 — Descomplicando Ingress e Cert-Manager</div><div style="font-size:0.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-top:2px;">Ingress · Annotations · Cert-Manager · Let\'s Encrypt · TLS automático · Labels</div></div>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="tab(event,'d9','ingress')">🚪 Ingress Avançado</button>
+    <button class="tab-btn" onclick="tab(event,'d9','cert')">🔒 Cert-Manager</button>
+    <button class="tab-btn" onclick="tab(event,'d9','labels')">🏷️ Labels & Annotations</button>
+    <button class="tab-btn" onclick="tab(event,'d9','quiz')">🎯 Quiz</button>
+  </div>
+  <div id="d9-ingress" class="tab-panel active">
+    <div class="prose">
+      <h3>Ingress com Annotations: personalizando o comportamento do nginx</h3>
+      <p>As <strong>Annotations</strong> do Ingress são a forma de passar configurações específicas ao Ingress Controller sem modificar o objeto padrão do Kubernetes. Cada controller tem suas próprias annotations — o nginx-ingress tem dezenas delas para controlar comportamentos como rewrite de URLs, rate limiting, autenticação, timeouts e muito mais.</p>
+      <p>As annotations mais usadas no nginx-ingress são:</p>
+      <ul>
+        <li><strong>rewrite-target:</strong> reescreve o path antes de passar ao Service. Útil quando seu Service espera <code>/</code> mas o Ingress roteia via <code>/api</code>.</li>
+        <li><strong>ssl-redirect:</strong> redireciona automaticamente HTTP → HTTPS.</li>
+        <li><strong>proxy-body-size:</strong> controla o tamanho máximo do body das requisições (padrão 1m).</li>
+        <li><strong>proxy-read-timeout / proxy-send-timeout:</strong> timeouts de conexão com o backend.</li>
+        <li><strong>use-regex:</strong> habilita regex nos paths do Ingress.</li>
+      </ul>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">YAML · ingress-com-annotations.yaml</span></div><pre>
+<span class="key">apiVersion</span>: <span class="val">networking.k8s.io/v1</span>
+<span class="key">kind</span>: <span class="val">Ingress</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">giropops-ingress</span>
+  <span class="key">annotations</span>:
+    <span class="key">nginx.ingress.kubernetes.io/rewrite-target</span>: <span class="val">/</span>
+    <span class="key">nginx.ingress.kubernetes.io/ssl-redirect</span>: <span class="str">"true"</span>
+    <span class="key">nginx.ingress.kubernetes.io/proxy-body-size</span>: <span class="str">"8m"</span>
+    <span class="key">nginx.ingress.kubernetes.io/proxy-read-timeout</span>: <span class="str">"60"</span>
+    <span class="key">cert-manager.io/cluster-issuer</span>: <span class="str">"letsencrypt-prod"</span>  <span class="cm"># TLS automático!</span>
+<span class="key">spec</span>:
+  <span class="key">ingressClassName</span>: <span class="val">nginx</span>
+  <span class="key">tls</span>:
+  - <span class="key">hosts</span>: [<span class="val">giropops.example.com</span>]
+    <span class="key">secretName</span>: <span class="val">giropops-tls</span>    <span class="cm"># cert-manager preencherá este Secret</span>
+  <span class="key">rules</span>:
+  - <span class="key">host</span>: <span class="val">giropops.example.com</span>
+    <span class="key">http</span>:
+      <span class="key">paths</span>:
+      - <span class="key">path</span>: <span class="val">/senhas</span>
+        <span class="key">pathType</span>: <span class="val">Prefix</span>
+        <span class="key">backend</span>:
+          <span class="key">service</span>:
+            <span class="key">name</span>: <span class="val">giropops-senhas</span>
+            <span class="key">port</span>: {<span class="key">number</span>: <span class="num">5000</span>}</pre></div>
+  </div>
+  <div id="d9-cert" class="tab-panel">
+    <div class="prose">
+      <h3>Cert-Manager: TLS automático com Let\'s Encrypt</h3>
+      <p>O <strong>Cert-Manager</strong> é um controlador Kubernetes que automatiza todo o ciclo de vida dos certificados TLS: solicitação, emissão, renovação e rotação. Ele integra com diversas autoridades certificadoras, sendo o <strong>Let\'s Encrypt</strong> (gratuito) o mais usado.</p>
+      <p>O fluxo completo após a instalação: você cria um <code>ClusterIssuer</code> apontando para o Let\'s Encrypt → adiciona a annotation <code>cert-manager.io/cluster-issuer</code> no seu Ingress → o Cert-Manager detecta, solicita o certificado via desafio HTTP-01 ou DNS-01, recebe o certificado e o armazena em um Secret TLS. Quando o certificado está próximo de expirar (30 dias antes), o Cert-Manager renova automaticamente.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH + YAML · instalando e configurando Cert-Manager</span></div><pre>
+<span class="cm"># Instalar Cert-Manager via kubectl apply</span>
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.1/cert-manager.yaml
+
+<span class="cm"># Confirmar instalação</span>
+kubectl get pods -n cert-manager
+<span class="cm"># cert-manager-xxx         Running</span>
+<span class="cm"># cert-manager-webhook-xxx Running</span>
+
+<span class="cm"># Criar ClusterIssuer para Let\'s Encrypt (válido para todo o cluster)</span>
+<span class="key">apiVersion</span>: <span class="val">cert-manager.io/v1</span>
+<span class="key">kind</span>: <span class="val">ClusterIssuer</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">letsencrypt-prod</span>
+<span class="key">spec</span>:
+  <span class="key">acme</span>:
+    <span class="key">server</span>: <span class="val">https://acme-v02.api.letsencrypt.org/directory</span>
+    <span class="key">email</span>: <span class="val">seuemail@exemplo.com</span>          <span class="cm"># seu email para notificações</span>
+    <span class="key">privateKeySecretRef</span>:
+      <span class="key">name</span>: <span class="val">letsencrypt-prod-key</span>
+    <span class="key">solvers</span>:
+    - <span class="key">http01</span>:                              <span class="cm"># desafio HTTP (mais simples)</span>
+        <span class="key">ingress</span>:
+          <span class="key">class</span>: <span class="val">nginx</span>
+
+<span class="cm"># Verificar se certificado foi emitido</span>
+kubectl get certificate -A
+kubectl describe certificate giropops-tls</pre></div>
+    <div class="callout tip"><span class="callout-icon">💡</span><p>Use <code>letsencrypt-staging</code> durante testes (não tem limite de emissão). Só mude para <code>letsencrypt-prod</code> quando tudo estiver funcionando — o Let\'s Encrypt prod tem rate limit de 50 certificados por domínio por semana.</p></div>
+  </div>
+  <div id="d9-labels" class="tab-panel">
+    <div class="prose">
+      <h3>Labels e Annotations: a diferença que importa</h3>
+      <p>Embora parecidos, <strong>Labels</strong> e <strong>Annotations</strong> têm propósitos completamente diferentes no Kubernetes.</p>
+      <p><strong>Labels</strong> são pares chave-valor usados para <em>identificação e seleção</em>. Services, Deployments, ReplicaSets e NetworkPolicies usam labels para selecionar objetos. Eles são indexados pelo apiserver para queries eficientes. Devem ser concisos e seguir convenções. Exemplo: <code>app: nginx</code>, <code>env: prod</code>, <code>version: v2</code>.</p>
+      <p><strong>Annotations</strong> são pares chave-valor para <em>metadados não-identificadores</em>. Não são usados para seleção — são para ferramentas externas, documentação, configuração de controllers. Podem ter valores grandes (JSON, YAML). Exemplo: configurações do Ingress Controller, causa de mudança no rollout, timestamp de último deployment.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH · gerenciando labels e annotations</span></div><pre>
+<span class="cm"># Adicionar label a um Pod existente</span>
+kubectl label pod meu-pod versao=v2
+
+<span class="cm"># Remover label (sufixo -)</span>
+kubectl label pod meu-pod versao-
+
+<span class="cm"># Selecionar recursos por label</span>
+kubectl get pods -l app=nginx
+kubectl get pods -l "app=nginx,env=prod"
+kubectl get pods -l "env in (prod,staging)"
+kubectl get pods -l "env notin (dev)"
+
+<span class="cm"># Adicionar annotation</span>
+kubectl annotate deployment meu-app   kubernetes.io/change-cause="Deploy v2.1.0 - fix bug #123"
+
+<span class="cm"># Ver labels e annotations</span>
+kubectl get pods --show-labels
+kubectl describe pod meu-pod | grep -A5 "Labels:\|Annotations:"</pre></div>
+  </div>
+  <div id="d9-quiz" class="tab-panel"><div id="quiz-d9"></div></div>
+</section>
+
+<!-- ══════════════════════════════════ DAY 10 ══════════════════════════════════ -->
+<section id="section-d10" class="section">
+  <div class="day-page-header">
+    <div class="day-page-icon d4">📦</div>
+    <div><div style="font-size:1.1rem;font-weight:800;letter-spacing:-0.02em;">Day 10 — Descomplicando o ServiceMonitor e Prometheus</div><div style="font-size:0.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-top:2px;">kube-prometheus-stack · ServiceMonitor · PodMonitor · Grafana · Métricas customizadas</div></div>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="tab(event,'d10','prometheus')">📊 Prometheus Stack</button>
+    <button class="tab-btn" onclick="tab(event,'d10','servicemonitor')">🔍 ServiceMonitor</button>
+    <button class="tab-btn" onclick="tab(event,'d10','grafana')">📈 Grafana</button>
+    <button class="tab-btn" onclick="tab(event,'d10','quiz')">🎯 Quiz</button>
+  </div>
+  <div id="d10-prometheus" class="tab-panel active">
+    <div class="prose">
+      <h3>kube-prometheus-stack: observabilidade completa em um Helm Chart</h3>
+      <p>O <strong>kube-prometheus-stack</strong> é o pacote Helm mais usado para monitoramento Kubernetes. Em um único <code>helm install</code>, ele instala: <strong>Prometheus</strong> (coleta e armazena métricas), <strong>Grafana</strong> (dashboards e visualização), <strong>AlertManager</strong> (roteamento de alertas para Slack, PagerDuty, etc.), <strong>Node Exporter</strong> (métricas de hardware dos Nodes), <strong>kube-state-metrics</strong> (métricas do estado dos objetos K8s) e <strong>Prometheus Operator</strong> (gerencia configs do Prometheus via CRDs).</p>
+      <p>O Prometheus Operator introduz dois conceitos importantes: <strong>ServiceMonitor</strong> e <strong>PodMonitor</strong> — CRDs que permitem configurar o scraping do Prometheus de forma declarativa, sem editar arquivos de configuração manualmente.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH · instalando kube-prometheus-stack</span></div><pre>
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+
+helm install monitoring prometheus-community/kube-prometheus-stack   --namespace monitoring   --create-namespace   --set grafana.adminPassword=suasenhasegura
+
+<span class="cm"># Verificar os componentes instalados</span>
+kubectl get pods -n monitoring
+<span class="cm"># alertmanager-monitoring-kube-prometheus-alertmanager-0   Running</span>
+<span class="cm"># monitoring-grafana-xxx                                    Running</span>
+<span class="cm"># monitoring-kube-prometheus-operator-xxx                   Running</span>
+<span class="cm"># monitoring-kube-state-metrics-xxx                         Running</span>
+<span class="cm"># monitoring-prometheus-node-exporter-xxx (DaemonSet!)      Running</span>
+<span class="cm"># prometheus-monitoring-kube-prometheus-prometheus-0        Running</span>
+
+<span class="cm"># Acessar o Grafana localmente</span>
+kubectl port-forward svc/monitoring-grafana 3000:80 -n monitoring
+<span class="cm"># Abra: http://localhost:3000 (admin / suasenhasegura)</span></pre></div>
+  </div>
+  <div id="d10-servicemonitor" class="tab-panel">
+    <div class="prose">
+      <h3>ServiceMonitor: configurando scraping declarativo</h3>
+      <p>O <strong>ServiceMonitor</strong> é um CRD (Custom Resource Definition) do Prometheus Operator. Em vez de editar o arquivo <code>prometheus.yml</code> manualmente para adicionar novos endpoints de scraping, você cria um objeto ServiceMonitor que descreve quais Services o Prometheus deve monitorar. O Operator detecta o ServiceMonitor e reconfigura o Prometheus automaticamente.</p>
+      <p>Para que o Prometheus encontre o seu ServiceMonitor, o label do ServiceMonitor deve bater com o <code>serviceMonitorSelector</code> do Prometheus — que no kube-prometheus-stack usa <code>release: monitoring</code> por padrão.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">YAML · servicemonitor.yaml</span></div><pre>
+<span class="key">apiVersion</span>: <span class="val">monitoring.coreos.com/v1</span>
+<span class="key">kind</span>: <span class="val">ServiceMonitor</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">minha-app-monitor</span>
+  <span class="key">labels</span>:
+    <span class="key">release</span>: <span class="val">monitoring</span>      <span class="cm"># deve bater com serviceMonitorSelector do Prometheus</span>
+<span class="key">spec</span>:
+  <span class="key">selector</span>:
+    <span class="key">matchLabels</span>:
+      <span class="key">app</span>: <span class="val">minha-app</span>          <span class="cm"># seleciona Services com este label</span>
+  <span class="key">endpoints</span>:
+  - <span class="key">port</span>: <span class="val">metrics</span>             <span class="cm"># nome da porta no Service</span>
+    <span class="key">path</span>: <span class="val">/metrics</span>            <span class="cm"># endpoint de métricas da aplicação</span>
+    <span class="key">interval</span>: <span class="val">30s</span>             <span class="cm"># frequência de scraping</span>
+  <span class="key">namespaceSelector</span>:
+    <span class="key">matchNames</span>: [<span class="val">producao</span>]   <span class="cm"># namespace onde está o Service</span></pre></div>
+  </div>
+  <div id="d10-grafana" class="tab-panel">
+    <div class="prose">
+      <h3>Grafana: dashboards e alertas</h3>
+      <p>O Grafana é a interface de visualização do stack. O kube-prometheus-stack já vem com dezenas de dashboards pré-configurados para o Kubernetes: uso de CPU/memória por namespace, status dos Pods, métricas dos Nodes, performance da rede, etc.</p>
+      <p>Para criar alertas que disparam para Slack ou PagerDuty quando algo está errado, você configura o <strong>AlertManager</strong> com receivers e routes, e cria <strong>PrometheusRules</strong> com as expressões PromQL que definem quando o alerta deve disparar.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">YAML · prometheusrule.yaml (alerta de Pod CrashLoopBackOff)</span></div><pre>
+<span class="key">apiVersion</span>: <span class="val">monitoring.coreos.com/v1</span>
+<span class="key">kind</span>: <span class="val">PrometheusRule</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">alertas-kubernetes</span>
+  <span class="key">labels</span>:
+    <span class="key">release</span>: <span class="val">monitoring</span>
+<span class="key">spec</span>:
+  <span class="key">groups</span>:
+  - <span class="key">name</span>: <span class="val">kubernetes.rules</span>
+    <span class="key">rules</span>:
+    - <span class="key">alert</span>: <span class="val">PodCrashLooping</span>
+      <span class="key">expr</span>: <span class="val">rate(kube_pod_container_status_restarts_total[15m]) > 0</span>
+      <span class="key">for</span>: <span class="val">5m</span>
+      <span class="key">labels</span>:
+        <span class="key">severity</span>: <span class="val">warning</span>
+      <span class="key">annotations</span>:
+        <span class="key">summary</span>: <span class="val">"Pod {{ $labels.pod }} está em CrashLoopBackOff"</span>
+    - <span class="key">alert</span>: <span class="val">NodeMemoryPressure</span>
+      <span class="key">expr</span>: <span class="val">node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes < 0.1</span>
+      <span class="key">for</span>: <span class="val">2m</span>
+      <span class="key">labels</span>:
+        <span class="key">severity</span>: <span class="val">critical</span>
+      <span class="key">annotations</span>:
+        <span class="key">summary</span>: <span class="val">"Node {{ $labels.instance }} com menos de 10% de RAM livre"</span></pre></div>
+  </div>
+  <div id="d10-quiz" class="tab-panel"><div id="quiz-d10"></div></div>
+</section>
+
+<!-- ══════════════════════════════════ DAY 11 ══════════════════════════════════ -->
+<section id="section-d11" class="section">
+  <div class="day-page-header">
+    <div class="day-page-icon d5">⛵</div>
+    <div><div style="font-size:1.1rem;font-weight:800;letter-spacing:-0.02em;">Day 11 — Descomplicando o Helm</div><div style="font-size:0.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-top:2px;">Helm Charts · Values · Templates · Repositórios · Releases · Hooks</div></div>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="tab(event,'d11','conceito')">⛵ O que é Helm?</button>
+    <button class="tab-btn" onclick="tab(event,'d11','criando')">🛠️ Criando Charts</button>
+    <button class="tab-btn" onclick="tab(event,'d11','values')">⚙️ Values & Templates</button>
+    <button class="tab-btn" onclick="tab(event,'d11','quiz')">🎯 Quiz</button>
+  </div>
+  <div id="d11-conceito" class="tab-panel active">
+    <div class="prose">
+      <h3>Helm: o gerenciador de pacotes do Kubernetes</h3>
+      <p>Imagine que você precisa instalar o PostgreSQL no seu cluster. Sem Helm, você teria que criar manualmente: StatefulSet, Service Headless, Service ClusterIP, ConfigMap com configurações, Secret com a senha, PersistentVolumeClaim, ServiceAccount, RBAC... São 7+ arquivos YAML. Com Helm: <code>helm install meu-postgres bitnami/postgresql</code>. Um comando.</p>
+      <p>O Helm trabalha com três conceitos centrais:</p>
+      <ul>
+        <li><strong>Chart:</strong> pacote reutilizável com templates dos manifestos Kubernetes + arquivo de valores padrão (<code>values.yaml</code>) + metadados (<code>Chart.yaml</code>). É o equivalente a um pacote npm ou pip.</li>
+        <li><strong>Release:</strong> instância de um Chart instalado no cluster. Você pode instalar o mesmo Chart múltiplas vezes (postgres em diferentes namespaces) — cada instalação é uma Release independente com seu próprio nome e histórico.</li>
+        <li><strong>Repository:</strong> coleção de Charts publicados. O <strong>Artifact Hub</strong> (artifacthub.io) é o repositório central de Charts públicos — como o npm registry para K8s.</li>
+      </ul>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH · comandos essenciais do Helm</span></div><pre>
+<span class="cm"># Adicionar repositório</span>
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo update
+
+<span class="cm"># Buscar charts</span>
+helm search repo postgresql
+helm search hub redis  <span class="cm"># busca no Artifact Hub</span>
+
+<span class="cm"># Instalar um chart</span>
+helm install meu-postgres bitnami/postgresql   --namespace databases   --create-namespace   --set auth.postgresPassword=senhasecreta
+
+<span class="cm"># Listar releases instaladas</span>
+helm list -A  <span class="cm"># todos namespaces</span>
+
+<span class="cm"># Ver valores padrão de um chart</span>
+helm show values bitnami/postgresql
+
+<span class="cm"># Upgrade de um release</span>
+helm upgrade meu-postgres bitnami/postgresql   --set replicaCount=2
+
+<span class="cm"># Histórico de revisões do release</span>
+helm history meu-postgres
+
+<span class="cm"># Rollback para revisão anterior</span>
+helm rollback meu-postgres 1
+
+<span class="cm"># Remover um release</span>
+helm uninstall meu-postgres -n databases</pre></div>
+  </div>
+  <div id="d11-criando" class="tab-panel">
+    <div class="prose">
+      <h3>Criando seu próprio Helm Chart</h3>
+      <p>Criar um Chart do zero é simples — o Helm gera a estrutura básica automaticamente. A partir daí, você substitui os manifests estáticos por templates com variáveis do <code>values.yaml</code>.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH · estrutura de um Chart</span></div><pre>
+<span class="cm"># Criar estrutura básica</span>
+helm create meu-app
+
+<span class="cm"># Estrutura gerada:</span>
+meu-app/
+  Chart.yaml          <span class="cm"># metadados: nome, versão, descrição</span>
+  values.yaml         <span class="cm"># valores padrão (sobrescritos no install)</span>
+  templates/
+    deployment.yaml   <span class="cm"># template do Deployment</span>
+    service.yaml      <span class="cm"># template do Service</span>
+    ingress.yaml      <span class="cm"># template do Ingress</span>
+    hpa.yaml          <span class="cm"># template do HPA</span>
+    _helpers.tpl      <span class="cm"># funções reutilizáveis (naming conventions)</span>
+    NOTES.txt         <span class="cm"># mensagem exibida após o install</span>
+
+<span class="cm"># Renderizar templates localmente (sem instalar)</span>
+helm template meu-app ./meu-app
+
+<span class="cm"># Instalar localmente</span>
+helm install meu-app ./meu-app
+
+<span class="cm"># Com valores customizados por arquivo</span>
+helm install meu-app ./meu-app -f valores-producao.yaml
+
+<span class="cm"># Dry-run: valida sem instalar</span>
+helm install meu-app ./meu-app --dry-run --debug</pre></div>
+  </div>
+  <div id="d11-values" class="tab-panel">
+    <div class="prose">
+      <h3>Values e Templates: a mágica do Helm</h3>
+      <p>Os templates do Helm usam a linguagem de templates do Go. Valores do <code>values.yaml</code> são referenciados como <code>{{ .Values.campo }}</code>. O Helm substitui essas expressões pelos valores reais durante a renderização.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">YAML · values.yaml</span></div><pre>
+<span class="key">replicaCount</span>: <span class="num">2</span>
+<span class="key">image</span>:
+  <span class="key">repository</span>: <span class="val">nginx</span>
+  <span class="key">tag</span>: <span class="str">"1.25"</span>
+  <span class="key">pullPolicy</span>: <span class="val">IfNotPresent</span>
+<span class="key">service</span>:
+  <span class="key">type</span>: <span class="val">ClusterIP</span>
+  <span class="key">port</span>: <span class="num">80</span>
+<span class="key">resources</span>:
+  <span class="key">limits</span>:   {<span class="key">cpu</span>: <span class="str">"500m"</span>, <span class="key">memory</span>: <span class="str">"256Mi"</span>}
+  <span class="key">requests</span>: {<span class="key">cpu</span>: <span class="str">"250m"</span>, <span class="key">memory</span>: <span class="str">"128Mi"</span>}</pre></div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">YAML · templates/deployment.yaml (com Go templates)</span></div><pre>
+<span class="key">apiVersion</span>: <span class="val">apps/v1</span>
+<span class="key">kind</span>: <span class="val">Deployment</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="fn">{{ include "meu-app.fullname" . }}</span>
+<span class="key">spec</span>:
+  <span class="key">replicas</span>: <span class="fn">{{ .Values.replicaCount }}</span>
+  <span class="key">template</span>:
+    <span class="key">spec</span>:
+      <span class="key">containers</span>:
+      - <span class="key">name</span>: <span class="fn">{{ .Chart.Name }}</span>
+        <span class="key">image</span>: <span class="fn">"{{ .Values.image.repository }}:{{ .Values.image.tag }}"</span>
+        <span class="key">imagePullPolicy</span>: <span class="fn">{{ .Values.image.pullPolicy }}</span>
+        <span class="key">resources</span>: <span class="fn">{{- toYaml .Values.resources | nindent 10 }}</span></pre></div>
+  </div>
+  <div id="d11-quiz" class="tab-panel"><div id="quiz-d11"></div></div>
+</section>
+
+<!-- ══════════════════════════════════ DAY 12 ══════════════════════════════════ -->
+<section id="section-d12" class="section">
+  <div class="day-page-header">
+    <div class="day-page-icon d6">🔐</div>
+    <div><div style="font-size:1.1rem;font-weight:800;letter-spacing:-0.02em;">Day 12 — Descomplicando RBAC Avançado</div><div style="font-size:0.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-top:2px;">ClusterRole · ServiceAccounts · OPA Gatekeeper · Pod Security Standards</div></div>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="tab(event,'d12','rbac')">🔐 RBAC Avançado</button>
+    <button class="tab-btn" onclick="tab(event,'d12','pss')">🛡️ Pod Security</button>
+    <button class="tab-btn" onclick="tab(event,'d12','quiz')">🎯 Quiz</button>
+  </div>
+  <div id="d12-rbac" class="tab-panel active">
+    <div class="prose">
+      <h3>RBAC na prática: ServiceAccounts e permissões mínimas</h3>
+      <p>O princípio de menor privilégio no Kubernetes significa que cada componente — seja um operador humano ou uma aplicação rodando em Pod — deve ter apenas as permissões estritamente necessárias. Uma aplicação comprometida com <code>cluster-admin</code> pode destruir todo o cluster; com permissões mínimas, o dano é contido.</p>
+      <p>Para aplicações, a identidade é a <strong>ServiceAccount</strong>. Por padrão, todo Pod usa a ServiceAccount <code>default</code> do namespace, que não tem permissões além de autenticar-se na API. Crie ServiceAccounts dedicadas por aplicação.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">YAML · rbac-completo.yaml</span></div><pre>
+<span class="cm"># 1. ServiceAccount para a aplicação</span>
+<span class="key">apiVersion</span>: <span class="val">v1</span>
+<span class="key">kind</span>: <span class="val">ServiceAccount</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">minha-app-sa</span>
+  <span class="key">namespace</span>: <span class="val">producao</span>
+<span class="cm">---</span>
+<span class="cm"># 2. Role com permissões mínimas necessárias</span>
+<span class="key">apiVersion</span>: <span class="val">rbac.authorization.k8s.io/v1</span>
+<span class="key">kind</span>: <span class="val">Role</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">minha-app-role</span>
+  <span class="key">namespace</span>: <span class="val">producao</span>
+<span class="key">rules</span>:
+- <span class="key">apiGroups</span>: [<span class="str">""</span>]
+  <span class="key">resources</span>: [<span class="str">"configmaps"</span>]       <span class="cm"># só lê ConfigMaps</span>
+  <span class="key">verbs</span>: [<span class="str">"get"</span>, <span class="str">"list"</span>]
+- <span class="key">apiGroups</span>: [<span class="str">""</span>]
+  <span class="key">resources</span>: [<span class="str">"pods"</span>]              <span class="cm"># só lista pods</span>
+  <span class="key">verbs</span>: [<span class="str">"get"</span>, <span class="str">"list"</span>, <span class="str">"watch"</span>]
+<span class="cm">---</span>
+<span class="cm"># 3. RoleBinding ligando ServiceAccount à Role</span>
+<span class="key">apiVersion</span>: <span class="val">rbac.authorization.k8s.io/v1</span>
+<span class="key">kind</span>: <span class="val">RoleBinding</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">minha-app-binding</span>
+  <span class="key">namespace</span>: <span class="val">producao</span>
+<span class="key">subjects</span>:
+- <span class="key">kind</span>: <span class="val">ServiceAccount</span>
+  <span class="key">name</span>: <span class="val">minha-app-sa</span>
+  <span class="key">namespace</span>: <span class="val">producao</span>
+<span class="key">roleRef</span>:
+  <span class="key">kind</span>: <span class="val">Role</span>
+  <span class="key">name</span>: <span class="val">minha-app-role</span>
+  <span class="key">apiGroup</span>: <span class="val">rbac.authorization.k8s.io</span>
+<span class="cm">---</span>
+<span class="cm"># 4. Deployment usando a ServiceAccount</span>
+<span class="key">spec</span>:
+  <span class="key">template</span>:
+    <span class="key">spec</span>:
+      <span class="key">serviceAccountName</span>: <span class="val">minha-app-sa</span>  <span class="cm"># usa a SA criada</span>
+      <span class="key">automountServiceAccountToken</span>: <span class="val">false</span>  <span class="cm"># segurança: não monta token se não precisar</span></pre></div>
+  </div>
+  <div id="d12-pss" class="tab-panel">
+    <div class="prose">
+      <h3>Pod Security Standards: protegendo o cluster de Pods inseguros</h3>
+      <p>O <strong>Pod Security Standards (PSS)</strong> é o mecanismo nativo do K8s (desde 1.25) para restringir o que um Pod pode fazer em termos de segurança. Existem três perfis:</p>
+      <ul>
+        <li><strong>Privileged:</strong> sem restrições — permite tudo, incluindo containers privilegiados. Usado apenas para infra de sistema (kube-system).</li>
+        <li><strong>Baseline:</strong> restrições mínimas — impede escalada de privilégios óbvia mas permite a maioria das cargas de trabalho. Bom ponto de partida.</li>
+        <li><strong>Restricted:</strong> restrições máximas — bloqueia tudo que não é estritamente necessário. Recomendado para produção.</li>
+      </ul>
+      <p>O PSS é aplicado por namespace via labels. Existem três modos de aplicação: <code>enforce</code> (bloqueia), <code>audit</code> (registra no audit log), <code>warn</code> (exibe aviso mas não bloqueia).</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH · aplicando Pod Security Standards</span></div><pre>
+<span class="cm"># Aplicar perfil restricted ao namespace producao (bloqueia + avisa)</span>
+kubectl label namespace producao   pod-security.kubernetes.io/enforce=restricted   pod-security.kubernetes.io/enforce-version=latest   pod-security.kubernetes.io/warn=restricted   pod-security.kubernetes.io/audit=restricted
+
+<span class="cm"># Tentar criar pod privilegiado será bloqueado:</span>
+<span class="cm"># Error: pods "nginx" is forbidden: violates PodSecurity "restricted:latest"</span>
+
+<span class="cm"># Ver labels de segurança de um namespace</span>
+kubectl get namespace producao --show-labels</pre></div>
+  </div>
+  <div id="d12-quiz" class="tab-panel"><div id="quiz-d12"></div></div>
+</section>
+
+<!-- ══════════════════════════════════ DAYS 13-16 ══════════════════════════════════ -->
+<section id="section-d13" class="section">
+  <div class="day-page-header"><div class="day-page-icon d7">🛡️</div>
+    <div><div style="font-size:1.1rem;font-weight:800;letter-spacing:-0.02em;">Day 13 — Imagens Seguras com Wolfi e Distroless</div><div style="font-size:0.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-top:2px;">Distroless · Wolfi OS · Chainguard · CVEs · Trivy · Supply Chain Security</div></div>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="tab(event,'d13','distroless')">🛡️ Distroless</button>
+    <button class="tab-btn" onclick="tab(event,'d13','wolfi')">🐺 Wolfi & Chainguard</button>
+    <button class="tab-btn" onclick="tab(event,'d13','scan')">🔍 Scan de CVEs</button>
+    <button class="tab-btn" onclick="tab(event,'d13','quiz')">🎯 Quiz</button>
+  </div>
+  <div id="d13-distroless" class="tab-panel active">
+    <div class="prose">
+      <h3>Imagens Distroless: menos é mais seguro</h3>
+      <p>Uma imagem Docker tradicional baseada em <code>ubuntu:22.04</code> ou <code>debian:bookworm</code> carrega centenas de pacotes que sua aplicação nunca usa — bash, curl, apt, ferramentas de sistema... Cada pacote é uma superfície de ataque potencial com CVEs (Common Vulnerabilities and Exposures).</p>
+      <p>Imagens <strong>Distroless</strong> (criadas pelo Google) contêm <em>apenas</em> a sua aplicação e suas dependências de runtime — sem shell, sem gerenciador de pacotes, sem utilitários de sistema. O resultado são imagens menores, muito mais seguras e com pouquíssimos CVEs.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">DOCKERFILE · multi-stage com imagem distroless</span></div><pre>
+<span class="cm"># Stage 1: BUILD (usa imagem completa com ferramentas de build)</span>
+<span class="kw">FROM</span> <span class="str">golang:1.21 AS builder</span>
+<span class="kw">WORKDIR</span> <span class="str">/app</span>
+<span class="kw">COPY</span> <span class="str">. .</span>
+<span class="kw">RUN</span> <span class="str">CGO_ENABLED=0 go build -o minha-app .</span>
+
+<span class="cm"># Stage 2: RUNTIME (imagem distroless — sem shell!)</span>
+<span class="kw">FROM</span> <span class="str">gcr.io/distroless/static:nonroot</span>
+<span class="kw">COPY --from=builder</span> <span class="str">/app/minha-app /</span>
+<span class="kw">USER</span> <span class="num">65532</span>  <span class="cm"># nonroot user</span>
+<span class="kw">ENTRYPOINT</span> <span class="str">["/minha-app"]</span>
+
+<span class="cm"># Resultado: imagem de ~5MB vs ~200MB com ubuntu base</span>
+<span class="cm"># kubectl exec -it pod -- sh  ← FALHA: não tem shell (feature, not bug!)</span></pre></div>
+    <div class="callout tip"><span class="callout-icon">💡</span><p>Para debugar containers distroless em produção, use o <code>kubectl debug</code> (disponível desde K8s 1.23) que adiciona um container temporário com ferramentas de debug sem modificar a imagem original: <code>kubectl debug -it meu-pod --image=busybox --target=meu-container</code></p></div>
+  </div>
+  <div id="d13-wolfi" class="tab-panel">
+    <div class="prose">
+      <h3>Wolfi OS e Chainguard Images</h3>
+      <p>O <strong>Wolfi</strong> é uma distribuição Linux minimalista criada pela Chainguard, projetada especificamente para containers seguros. Diferente das distroless (que não têm shell nem package manager), o Wolfi tem o <code>apk</code> mas é construído do zero com foco em segurança: zero CVEs conhecidos no momento da publicação, builds reproduzíveis e SBOM (Software Bill of Materials) para cada imagem.</p>
+      <p>As <strong>Chainguard Images</strong> são imagens públicas gratuitas baseadas em Wolfi para as stacks mais populares (nginx, node, python, go, java). São substitutas drop-in para as imagens oficiais do Docker Hub, mas com zero ou quase zero CVEs.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">DOCKERFILE · usando Chainguard Images</span></div><pre>
+<span class="cm"># Antes: image com centenas de CVEs</span>
+<span class="kw">FROM</span> <span class="str">node:20-alpine</span>
+
+<span class="cm"># Depois: Chainguard Node (zero CVEs conhecidos)</span>
+<span class="kw">FROM</span> <span class="str">cgr.dev/chainguard/node:latest</span>
+
+<span class="cm"># Comparação de CVEs (exemplo real):</span>
+<span class="cm"># node:20-alpine    → ~15 CVEs (HIGH/CRITICAL)</span>
+<span class="cm"># chainguard/node   → 0 CVEs</span></pre></div>
+  </div>
+  <div id="d13-scan" class="tab-panel">
+    <div class="prose">
+      <h3>Trivy: scanning de vulnerabilidades em imagens</h3>
+      <p>O <strong>Trivy</strong> (da Aqua Security) é o scanner de vulnerabilidades open-source mais popular para containers. Ele analisa a imagem e reporta todos os CVEs conhecidos nos pacotes instalados, com severidade (CRITICAL, HIGH, MEDIUM, LOW).</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH · Trivy na prática</span></div><pre>
+<span class="cm"># Instalar Trivy</span>
+curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+
+<span class="cm"># Scanear uma imagem</span>
+trivy image nginx:latest
+<span class="cm"># Total: 15 (CRITICAL: 2, HIGH: 5, MEDIUM: 8)</span>
+
+trivy image cgr.dev/chainguard/nginx:latest
+<span class="cm"># Total: 0 (CRITICAL: 0, HIGH: 0)</span>
+
+<span class="cm"># Só mostrar CRITICAL e HIGH</span>
+trivy image --severity CRITICAL,HIGH minha-app:v1
+
+<span class="cm"># Integrar no CI/CD (falha o pipeline se houver CVEs críticos)</span>
+trivy image --exit-code 1 --severity CRITICAL minha-app:v1</pre></div>
+  </div>
+  <div id="d13-quiz" class="tab-panel"><div id="quiz-d13"></div></div>
+</section>
+
+<section id="section-d14" class="section">
+  <div class="day-page-header"><div class="day-page-icon d0">🌐</div>
+    <div><div style="font-size:1.1rem;font-weight:800;letter-spacing:-0.02em;">Day 14 — Descomplicando Network Policies</div><div style="font-size:0.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-top:2px;">NetworkPolicy · Ingress rules · Egress rules · Default deny · Calico · Cilium</div></div>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="tab(event,'d14','conceito')">🌐 Conceito</button>
+    <button class="tab-btn" onclick="tab(event,'d14','regras')">📋 Regras</button>
+    <button class="tab-btn" onclick="tab(event,'d14','quiz')">🎯 Quiz</button>
+  </div>
+  <div id="d14-conceito" class="tab-panel active">
+    <div class="prose">
+      <h3>Network Policies: o firewall dos Pods</h3>
+      <p>Por padrão, no Kubernetes <strong>todos os Pods podem se comunicar com todos os outros Pods</strong> do cluster, em qualquer namespace. Isso é conveniente para desenvolvimento, mas é um pesadelo de segurança em produção: um Pod comprometido pode fazer requisições para qualquer outro serviço do cluster — incluindo o banco de dados de produção.</p>
+      <p>As <strong>Network Policies</strong> permitem restringir essa comunicação, implementando um modelo de firewall no nível de Pod. Elas funcionam como allow-lists: por padrão, tudo é permitido. Quando você cria uma NetworkPolicy que seleciona um Pod, ela implicitamente nega todo o tráfego não explicitamente permitido.</p>
+      <p><strong>Pré-requisito crítico:</strong> as NetworkPolicies são apenas definições. Quem as implementa é o CNI plugin. <strong>Flannel não suporta NetworkPolicies</strong>. Use Calico, Cilium ou Weave Net.</p>
+    </div>
+  </div>
+  <div id="d14-regras" class="tab-panel">
+    <div class="prose">
+      <h3>Criando regras de NetworkPolicy</h3>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">YAML · network-policies.yaml</span></div><pre>
+<span class="cm"># ── Default Deny ALL: bloqueia todo tráfego do namespace ──────────</span>
+<span class="key">apiVersion</span>: <span class="val">networking.k8s.io/v1</span>
+<span class="key">kind</span>: <span class="val">NetworkPolicy</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">default-deny-all</span>
+  <span class="key">namespace</span>: <span class="val">producao</span>
+<span class="key">spec</span>:
+  <span class="key">podSelector</span>: {}            <span class="cm"># {} = seleciona TODOS os Pods</span>
+  <span class="key">policyTypes</span>: [<span class="val">Ingress</span>, <span class="val">Egress</span>]  <span class="cm"># bloqueia entrada e saída</span>
+<span class="cm">---</span>
+<span class="cm"># ── Permitir: frontend acessa backend na porta 8080 ───────────────</span>
+<span class="key">apiVersion</span>: <span class="val">networking.k8s.io/v1</span>
+<span class="key">kind</span>: <span class="val">NetworkPolicy</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">allow-frontend-to-backend</span>
+  <span class="key">namespace</span>: <span class="val">producao</span>
+<span class="key">spec</span>:
+  <span class="key">podSelector</span>:
+    <span class="key">matchLabels</span>: {<span class="key">app</span>: <span class="val">backend</span>}   <span class="cm"># regra se aplica ao backend</span>
+  <span class="key">policyTypes</span>: [<span class="val">Ingress</span>]
+  <span class="key">ingress</span>:
+  - <span class="key">from</span>:
+    - <span class="key">podSelector</span>:
+        <span class="key">matchLabels</span>: {<span class="key">app</span>: <span class="val">frontend</span>}   <span class="cm"># só aceita do frontend</span>
+    <span class="key">ports</span>:
+    - <span class="key">protocol</span>: <span class="val">TCP</span>
+      <span class="key">port</span>: <span class="num">8080</span>
+<span class="cm">---</span>
+<span class="cm"># ── Permitir: DNS (CoreDNS) para todos ────────────────────────────</span>
+<span class="key">apiVersion</span>: <span class="val">networking.k8s.io/v1</span>
+<span class="key">kind</span>: <span class="val">NetworkPolicy</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">allow-dns</span>
+  <span class="key">namespace</span>: <span class="val">producao</span>
+<span class="key">spec</span>:
+  <span class="key">podSelector</span>: {}
+  <span class="key">policyTypes</span>: [<span class="val">Egress</span>]
+  <span class="key">egress</span>:
+  - <span class="key">ports</span>:
+    - <span class="key">protocol</span>: <span class="val">UDP</span>
+      <span class="key">port</span>: <span class="num">53</span>   <span class="cm"># DNS — sem isso, pods não resolvem nomes!</span></pre></div>
+    <div class="callout danger"><span class="callout-icon">🚨</span><p>Ao aplicar um <code>default-deny-all</code>, lembre-se de criar explicitamente uma regra permitindo tráfego DNS (porta UDP 53) — sem ela, os Pods não conseguirão resolver nomes de Services e tudo quebrará silenciosamente.</p></div>
+  </div>
+  <div id="d14-quiz" class="tab-panel"><div id="quiz-d14"></div></div>
+</section>
+
+<section id="section-d15" class="section">
+  <div class="day-page-header"><div class="day-page-icon d2">📅</div>
+    <div><div style="font-size:1.1rem;font-weight:800;letter-spacing:-0.02em;">Day 15 — Taints, Tolerations e Affinity</div><div style="font-size:0.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-top:2px;">Taints · Tolerations · Node Affinity · Pod Affinity · TopologySpreadConstraints</div></div>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="tab(event,'d15','taints')">🚫 Taints & Tolerations</button>
+    <button class="tab-btn" onclick="tab(event,'d15','affinity')">🎯 Affinity</button>
+    <button class="tab-btn" onclick="tab(event,'d15','spread')">⚖️ TopologySpread</button>
+    <button class="tab-btn" onclick="tab(event,'d15','quiz')">🎯 Quiz</button>
+  </div>
+  <div id="d15-taints" class="tab-panel active">
+    <div class="prose">
+      <h3>Taints e Tolerations: Nodes que rejeitam Pods</h3>
+      <p>Um <strong>Taint</strong> é uma marca em um Node que diz "não quero Pods aqui, a menos que eles explicitamente tolerem isso". Uma <strong>Toleration</strong> é a declaração do Pod dizendo "eu aceito ser colocado em Nodes com esse taint".</p>
+      <p>O caso de uso clássico é um Node com GPU: você adiciona o taint <code>hardware=gpu:NoSchedule</code> ao Node, e apenas Pods com a toleration correspondente serão agendados nele — evitando que Pods sem GPU desperdicem esse recurso caro.</p>
+      <p>Existem três efeitos possíveis para um Taint:</p>
+      <ul>
+        <li><strong>NoSchedule:</strong> novos Pods sem toleration não são agendados no Node. Pods existentes não são afetados.</li>
+        <li><strong>PreferNoSchedule:</strong> o scheduler tenta evitar o Node, mas pode usá-lo se não houver alternativa.</li>
+        <li><strong>NoExecute:</strong> Pods existentes sem toleration são evictados imediatamente, e novos não são agendados.</li>
+      </ul>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH + YAML · taints e tolerations na prática</span></div><pre>
+<span class="cm"># Adicionar taint a um Node</span>
+kubectl taint nodes gpu-node-01 hardware=gpu:NoSchedule
+
+<span class="cm"># Ver taints de um Node</span>
+kubectl describe node gpu-node-01 | grep Taints
+
+<span class="cm"># Remover taint (sufixo -)</span>
+kubectl taint nodes gpu-node-01 hardware=gpu:NoSchedule-
+
+<span class="cm"># Pod que tolera o taint e roda APENAS no Node com GPU</span>
+<span class="key">spec</span>:
+  <span class="key">tolerations</span>:
+  - <span class="key">key</span>: <span class="str">"hardware"</span>
+    <span class="key">operator</span>: <span class="str">"Equal"</span>
+    <span class="key">value</span>: <span class="str">"gpu"</span>
+    <span class="key">effect</span>: <span class="str">"NoSchedule"</span>
+  <span class="key">nodeSelector</span>:
+    <span class="key">hardware</span>: <span class="val">gpu</span>    <span class="cm"># também força ir para Node com GPU (além de tolerar)</span></pre></div>
+  </div>
+  <div id="d15-affinity" class="tab-panel">
+    <div class="prose">
+      <h3>Node Affinity e Pod Affinity/Anti-Affinity</h3>
+      <p>Enquanto Taints/Tolerations são a perspectiva do <em>Node</em> ("não aceito certos Pods"), o <strong>Affinity</strong> é a perspectiva do <em>Pod</em> ("prefiro ou exijo ir para certos Nodes"). O Affinity é mais expressivo que o <code>nodeSelector</code>, permitindo operadores como <code>In</code>, <code>NotIn</code>, <code>Exists</code> e regras <code>required</code> (hard) vs <code>preferred</code> (soft).</p>
+      <p>O <strong>Pod Anti-Affinity</strong> é especialmente poderoso para alta disponibilidade: você pode instruir o scheduler a nunca colocar duas réplicas do mesmo Deployment no mesmo Node ou mesmo AZ — garantindo que uma falha de Node/AZ não derrube todas as réplicas.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">YAML · pod anti-affinity para HA</span></div><pre>
+<span class="key">spec</span>:
+  <span class="key">template</span>:
+    <span class="key">spec</span>:
+      <span class="key">affinity</span>:
+        <span class="key">podAntiAffinity</span>:
+          <span class="key">requiredDuringSchedulingIgnoredDuringExecution</span>:  <span class="cm"># hard: obrigatório</span>
+          - <span class="key">labelSelector</span>:
+              <span class="key">matchLabels</span>: {<span class="key">app</span>: <span class="val">meu-app</span>}        <span class="cm"># evita Pods do mesmo app</span>
+            <span class="key">topologyKey</span>: <span class="str">"kubernetes.io/hostname"</span>  <span class="cm"># no mesmo Node</span>
+        <span class="key">nodeAffinity</span>:
+          <span class="key">preferredDuringSchedulingIgnoredDuringExecution</span>:  <span class="cm"># soft: preferência</span>
+          - <span class="key">weight</span>: <span class="num">100</span>
+            <span class="key">preference</span>:
+              <span class="key">matchExpressions</span>:
+              - <span class="key">key</span>: <span class="val">disktype</span>
+                <span class="key">operator</span>: <span class="val">In</span>
+                <span class="key">values</span>: [<span class="val">ssd</span>]   <span class="cm"># prefere Nodes com SSD, mas não obrigatório</span></pre></div>
+  </div>
+  <div id="d15-spread" class="tab-panel">
+    <div class="prose">
+      <h3>TopologySpreadConstraints: distribuição inteligente</h3>
+      <p>O <strong>TopologySpreadConstraints</strong> é a versão moderna e mais flexível do Pod Anti-Affinity para distribuição entre zonas. Em vez de apenas "nunca no mesmo Node", você pode expressar "distribua as réplicas uniformemente entre as 3 zonas de disponibilidade, com no máximo 1 Pod de diferença entre elas".</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">YAML · distribuição entre AZs</span></div><pre>
+<span class="key">spec</span>:
+  <span class="key">topologySpreadConstraints</span>:
+  - <span class="key">maxSkew</span>: <span class="num">1</span>                        <span class="cm"># máx de diferença entre zonas</span>
+    <span class="key">topologyKey</span>: <span class="str">"topology.kubernetes.io/zone"</span>  <span class="cm"># distribui por AZ</span>
+    <span class="key">whenUnsatisfiable</span>: <span class="val">DoNotSchedule</span>  <span class="cm"># bloqueia se não satisfeito</span>
+    <span class="key">labelSelector</span>:
+      <span class="key">matchLabels</span>: {<span class="key">app</span>: <span class="val">meu-app</span>}
+  - <span class="key">maxSkew</span>: <span class="num">1</span>
+    <span class="key">topologyKey</span>: <span class="str">"kubernetes.io/hostname"</span>  <span class="cm"># e por Node dentro de cada AZ</span>
+    <span class="key">whenUnsatisfiable</span>: <span class="val">ScheduleAnyway</span>   <span class="cm"># prefere, mas não obriga</span>
+    <span class="key">labelSelector</span>:
+      <span class="key">matchLabels</span>: {<span class="key">app</span>: <span class="val">meu-app</span>}</pre></div>
+  </div>
+  <div id="d15-quiz" class="tab-panel"><div id="quiz-d15"></div></div>
+</section>
+
+<section id="section-d16" class="section">
+  <div class="day-page-header"><div class="day-page-icon d3">🚀</div>
+    <div><div style="font-size:1.1rem;font-weight:800;letter-spacing:-0.02em;">Day 16 — Kubernetes em Produção: Troubleshooting e Boas Práticas</div><div style="font-size:0.72rem;color:var(--text3);font-family:'JetBrains Mono',monospace;margin-top:2px;">Debug avançado · Troubleshooting · etcd backup · Upgrade de cluster · GitOps</div></div>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="tab(event,'d16','debug')">🔧 Debug Avançado</button>
+    <button class="tab-btn" onclick="tab(event,'d16','etcd')">💾 etcd Backup</button>
+    <button class="tab-btn" onclick="tab(event,'d16','upgrade')">⬆️ Upgrade</button>
+    <button class="tab-btn" onclick="tab(event,'d16','gitops')">🔄 GitOps</button>
+    <button class="tab-btn" onclick="tab(event,'d16','quiz')">🎯 Quiz</button>
+  </div>
+  <div id="d16-debug" class="tab-panel active">
+    <div class="prose">
+      <h3>Troubleshooting avançado: status dos Pods e o que significam</h3>
+      <p>Quando algo dá errado no Kubernetes, o primeiro passo é sempre entender o status do Pod e os Events. Cada status conta uma história:</p>
+    </div>
+    <div class="data-table-wrap" style="overflow-x:auto">
+    <table class="data-table">
+      <tr><th>Status</th><th>Causa mais comum</th><th>Primeiro comando</th></tr>
+      <tr><td><strong>Pending</strong></td><td>Sem Node com recursos, PVC não bound, taint sem toleration</td><td><code>kubectl describe pod</code> → Events</td></tr>
+      <tr><td><strong>CrashLoopBackOff</strong></td><td>App crasha ao iniciar, config errada, OOMKilled</td><td><code>kubectl logs --previous</code></td></tr>
+      <tr><td><strong>OOMKilled</strong></td><td>Memory limit excedido</td><td>Aumentar limits ou buscar memory leak</td></tr>
+      <tr><td><strong>ImagePullBackOff</strong></td><td>Imagem não existe, tag errada, falta imagePullSecret</td><td><code>kubectl describe pod</code> → Failed to pull</td></tr>
+      <tr><td><strong>Terminating (stuck)</strong></td><td>Finalizers pendentes, volume stuck</td><td><code>kubectl delete pod --force --grace-period=0</code></td></tr>
+      <tr><td><strong>ContainerCreating</strong></td><td>Aguardando PVC, baixando imagem, CNI lento</td><td><code>kubectl describe pod</code> → Events</td></tr>
+    </table></div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH · toolkit completo de debug</span></div><pre>
+<span class="cm"># Pod temporário de debug com ferramentas de rede</span>
+kubectl run debug --image=nicolaka/netshoot -it --rm
+
+<span class="cm"># Dentro do netshoot: testar DNS, conectividade, portas</span>
+nslookup meu-service.default.svc.cluster.local
+curl -v http://meu-service:8080/health
+tcpdump -i eth0 port 8080
+
+<span class="cm"># kubectl debug: adiciona container temporário sem modificar o Pod</span>
+kubectl debug -it meu-pod --image=busybox --target=meu-container
+
+<span class="cm"># Ver todos os eventos do namespace ordenados por tempo</span>
+kubectl get events --sort-by=.metadata.creationTimestamp -n producao
+
+<span class="cm"># Ver TODOS os eventos de problemas no cluster inteiro</span>
+kubectl get events -A --field-selector type=Warning
+
+<span class="cm"># Verificar uso de recursos</span>
+kubectl top nodes
+kubectl top pods --sort-by=memory -A
+
+<span class="cm"># Verificar requests/limits alocados por Node</span>
+kubectl describe node meu-node | grep -A10 "Allocated resources"</pre></div>
+  </div>
+  <div id="d16-etcd" class="tab-panel">
+    <div class="prose">
+      <h3>Backup e Restore do etcd: a operação mais crítica</h3>
+      <p>O etcd é o único componente stateful do control plane — é onde vive todo o estado do cluster. Fazer backup do etcd regularmente não é opcional em produção, é uma obrigação. Um cluster sem backup do etcd é um cluster à beira do precipício.</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH · backup e restore do etcd</span></div><pre>
+<span class="cm"># ── BACKUP ────────────────────────────────────────────────────────</span>
+ETCDCTL_API=3 etcdctl snapshot save /backup/etcd-$(date +%Y%m%d-%H%M%S).db   --endpoints=https://127.0.0.1:2379   --cacert=/etc/kubernetes/pki/etcd/ca.crt   --cert=/etc/kubernetes/pki/etcd/server.crt   --key=/etc/kubernetes/pki/etcd/server.key
+
+<span class="cm"># Verificar integridade do backup</span>
+ETCDCTL_API=3 etcdctl snapshot status /backup/etcd-backup.db --write-out=table
+
+<span class="cm"># ── RESTORE (em caso de desastre) ─────────────────────────────────</span>
+<span class="cm"># 1. Parar o kube-apiserver (remover do static pods)</span>
+sudo mv /etc/kubernetes/manifests/kube-apiserver.yaml /tmp/
+
+<span class="cm"># 2. Restaurar o snapshot</span>
+ETCDCTL_API=3 etcdctl snapshot restore /backup/etcd-backup.db   --data-dir=/var/lib/etcd-restore
+
+<span class="cm"># 3. Atualizar o path no manifesto do etcd</span>
+sudo sed -i 's|/var/lib/etcd|/var/lib/etcd-restore|g'   /etc/kubernetes/manifests/etcd.yaml
+
+<span class="cm"># 4. Restaurar o kube-apiserver</span>
+sudo mv /tmp/kube-apiserver.yaml /etc/kubernetes/manifests/
+
+<span class="cm"># Automatizar backup diário via CronJob K8s</span>
+<span class="cm"># (rode em um Pod com acesso ao socket do etcd)</span></pre></div>
+  </div>
+  <div id="d16-upgrade" class="tab-panel">
+    <div class="prose">
+      <h3>Upgrade seguro do cluster com kubeadm</h3>
+      <p>Fazer upgrade do Kubernetes requer atenção e ordem precisa. O processo correto é: atualizar o control plane primeiro, depois os workers um a um. Nunca pule versões — o K8s suporta upgrade de apenas uma minor version por vez (1.27 → 1.28, não 1.27 → 1.29).</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH · upgrade do cluster (1.28 → 1.29)</span></div><pre>
+<span class="cm"># ── NO CONTROL PLANE ──────────────────────────────────────────────</span>
+<span class="cm"># 1. Remover hold e atualizar kubeadm</span>
+sudo apt-mark unhold kubeadm
+sudo apt-get install -y kubeadm=1.29.0-00
+sudo apt-mark hold kubeadm
+
+<span class="cm"># 2. Verificar o plano de upgrade</span>
+sudo kubeadm upgrade plan
+
+<span class="cm"># 3. Aplicar o upgrade do control plane</span>
+sudo kubeadm upgrade apply v1.29.0
+
+<span class="cm"># 4. Atualizar kubelet e kubectl no control plane</span>
+sudo apt-mark unhold kubelet kubectl
+sudo apt-get install -y kubelet=1.29.0-00 kubectl=1.29.0-00
+sudo apt-mark hold kubelet kubectl
+sudo systemctl daemon-reload && sudo systemctl restart kubelet
+
+<span class="cm"># ── EM CADA WORKER (um de cada vez!) ──────────────────────────────</span>
+<span class="cm"># 5. Drenar o Node (remove Pods graciosamente)</span>
+kubectl drain worker-01 --ignore-daemonsets --delete-emptydir-data
+
+<span class="cm"># 6. Atualizar kubeadm, kubelet, kubectl no worker</span>
+sudo apt-mark unhold kubeadm kubelet kubectl
+sudo apt-get install -y kubeadm=1.29.0-00 kubelet=1.29.0-00 kubectl=1.29.0-00
+sudo apt-mark hold kubeadm kubelet kubectl
+sudo kubeadm upgrade node
+sudo systemctl daemon-reload && sudo systemctl restart kubelet
+
+<span class="cm"># 7. Reabilitar o Node</span>
+kubectl uncordon worker-01
+<span class="cm"># Repita para cada worker</span></pre></div>
+  </div>
+  <div id="d16-gitops" class="tab-panel">
+    <div class="prose">
+      <h3>GitOps com ArgoCD: o Git como fonte da verdade</h3>
+      <p>GitOps é uma prática onde o <strong>repositório Git é a única fonte de verdade</strong> para o estado desejado do cluster. Ninguém aplica manifests manualmente com <code>kubectl apply</code> — uma ferramenta como o <strong>ArgoCD</strong> monitora o repositório Git e sincroniza automaticamente o cluster com o que está no repositório.</p>
+      <p>Benefícios: auditoria completa (quem mudou o quê quando via git log), rollback simples (git revert), revisão de mudanças via Pull Request, segurança (kubectl não fica nas mãos dos desenvolvedores).</p>
+    </div>
+    <div class="code-wrap"><div class="code-header"><span class="code-lang">BASH · instalando e configurando ArgoCD</span></div><pre>
+<span class="cm"># Instalar ArgoCD</span>
+kubectl create namespace argocd
+kubectl apply -n argocd -f   https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+<span class="cm"># Acessar a UI</span>
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+
+<span class="cm"># Obter senha inicial</span>
+kubectl -n argocd get secret argocd-initial-admin-secret   -o jsonpath="{.data.password}" | base64 -d
+
+<span class="cm"># Criar uma Application (sincroniza Git → Cluster)</span>
+<span class="key">apiVersion</span>: <span class="val">argoproj.io/v1alpha1</span>
+<span class="key">kind</span>: <span class="val">Application</span>
+<span class="key">metadata</span>:
+  <span class="key">name</span>: <span class="val">meu-app</span>
+  <span class="key">namespace</span>: <span class="val">argocd</span>
+<span class="key">spec</span>:
+  <span class="key">project</span>: <span class="val">default</span>
+  <span class="key">source</span>:
+    <span class="key">repoURL</span>: <span class="val">https://github.com/minha-org/k8s-manifests</span>
+    <span class="key">targetRevision</span>: <span class="val">HEAD</span>
+    <span class="key">path</span>: <span class="val">apps/meu-app</span>
+  <span class="key">destination</span>:
+    <span class="key">server</span>: <span class="val">https://kubernetes.default.svc</span>
+    <span class="key">namespace</span>: <span class="val">producao</span>
+  <span class="key">syncPolicy</span>:
+    <span class="key">automated</span>:
+      <span class="key">prune</span>: <span class="val">true</span>      <span class="cm"># remove recursos deletados do Git</span>
+      <span class="key">selfHeal</span>: <span class="val">true</span>   <span class="cm"># corrige mudanças manuais no cluster</span></pre></div>
+  </div>
+  <div id="d16-quiz" class="tab-panel"><div id="quiz-d16"></div></div>
+</section>
 </main>
 
 <script>
@@ -2333,6 +3173,9 @@ function nav(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   if (id === 'interview') renderIQ();
   if (id === 'projects') renderProjects();
+  // trigger quiz render for all days
+  const allDays = ['d1','d2','d3','d4','d5','d6','d7','d8','d9','d10','d11','d12','d13','d14','d15','d16'];
+  if (allDays.includes(id)) { /* quiz rendered on demand via tab() */ }
 }
 
 function tab(event, phase, name) {
@@ -2350,7 +3193,7 @@ function tab(event, phase, name) {
 // ═══════════════════════════════════════════════════════════════
 const scores = {};
 function updateProgress() {
-  const days = ['d1','d2','d3','d4','d5','d6','d7','d8'];
+  const days = ['d1','d2','d3','d4','d5','d6','d7','d8','d9','d10','d11','d12','d13','d14','d15','d16'];
   let done = 0;
   days.forEach((d, i) => {
     if (scores[d] !== undefined) {
@@ -2515,6 +3358,78 @@ const QUIZZES = {
     { type:'mc', text:'Você criou um Service mas o tráfego não está chegando nos Pods. kubectl get endpoints mostra "<none>". Qual é a causa mais provável?',
       opts:['O kube-proxy está fora','Os Pods não existem no cluster','Os labels dos Pods não correspondem ao selector do Service','O tipo do Service está errado'], correct:2,
       exp:{ c:'Endpoints vazios (<none>) significam que NENHUM Pod correspondeu ao selector do Service. A causa mais comum é um typo nos labels: o Service tem selector "app: backend" mas os Pods têm label "app: Backend" (maiúscula) ou "App: backend" (chave diferente). Use kubectl get pods --show-labels e compare com kubectl describe service para encontrar a discrepância.', w:['Se o kube-proxy estivesse fora, o DNS ainda resolveria mas as conexões falhariam — os Endpoints ainda apareceriam.','Se os Pods não existissem, o comando kubectl get pods não retornaria nada — mas os Endpoints poderiam estar vazios também.','O tipo do Service (ClusterIP, NodePort, etc.) não afeta quais Pods são selecionados.'] }
+    }
+  ],
+
+
+  d9: [
+    {type:'mc',text:'Qual é a função das Annotations no Ingress do Kubernetes?',opts:['São usadas pelo selector do Service para encontrar Pods','Passam configurações específicas ao Ingress Controller sem modificar o objeto padrão K8s','Definem as rotas de rede do cluster','São equivalentes aos Labels — apenas nomenclatura diferente'],correct:1,
+     exp:{c:'Annotations como nginx.ingress.kubernetes.io/rewrite-target passam parâmetros diretamente ao Ingress Controller (nginx, Traefik). Cada controller tem suas próprias annotations. Elas permitem customizar comportamento (timeouts, SSL redirect, rate limiting) sem estender o schema padrão do K8s.',w:['Labels e selectors são para seleção de recursos — Annotations não são indexadas e não podem ser usadas em selectors.','Rotas de rede são configuradas pelo CNI plugin e regras de iptables — não por Annotations do Ingress.','Labels e Annotations têm propósitos completamente diferentes: Labels = identificação/seleção; Annotations = metadados para ferramentas externas.']}
+    },
+    {type:'mc',text:'O que é o Cert-Manager e qual problema ele resolve?',opts:['Um gerenciador de senhas para Secrets do K8s','Um controlador K8s que automatiza solicitação, emissão, renovação e rotação de certificados TLS','Um proxy reverso que substitui o Ingress Controller','Um scanner de vulnerabilidades em certificados'],correct:1,
+     exp:{c:'Cert-Manager automatiza todo o ciclo de vida TLS: detecta Ingresses com a annotation cert-manager.io/cluster-issuer, solicita certificados ao Let\'s Encrypt (ou outras CAs), os armazena como Secrets TLS, e os renova automaticamente antes do vencimento (30 dias antes).',w:['Secrets do K8s são gerenciados pelo próprio K8s — o Cert-Manager é específico para certificados TLS.','Cert-Manager não é proxy reverso — ele apenas gerencia certificados, usados pelo Ingress Controller existente.','Scanning de certificados é feito por ferramentas como Trivy ou Cert-Manager monitoring add-ons, não pelo Cert-Manager em si.']}
+    },
+    {type:'mc',text:'Qual a diferença entre Labels e Annotations no Kubernetes?',opts:['Labels são para produção; Annotations para desenvolvimento','Labels são usados para seleção de recursos (Services, selectors); Annotations são metadados para ferramentas externas, sem seleção','São idênticos — Annotations substituíram Labels na versão 1.20+','Labels são para Pods; Annotations são para Services'],correct:1,
+     exp:{c:'Labels são indexados pelo kube-apiserver e usados por selectors de Services, Deployments, ReplicaSets e NetworkPolicies para filtrar recursos. Annotations não são indexadas e não podem ser usadas em selectors — servem para metadados que ferramentas externas leem (Ingress Controller, Cert-Manager, ArgoCD, etc.).',w:['Ambos funcionam em todos os ambientes.','Annotations não substituíram Labels — são complementares com propósitos diferentes.','Tanto Labels quanto Annotations podem ser adicionados a qualquer recurso K8s: Pods, Services, Nodes, Namespaces, etc.']}
+    }
+  ],
+  d10: [
+    {type:'mc',text:'O que é o kube-prometheus-stack e quais componentes ele instala?',opts:['Apenas o Prometheus','Prometheus + Grafana + AlertManager + Node Exporter + kube-state-metrics + Prometheus Operator','Apenas métricas de CPU e memória','Um dashboard web para kubectl'],correct:1,
+     exp:{c:'O kube-prometheus-stack é o Helm chart mais completo para observabilidade K8s. Em um único helm install você tem: Prometheus (coleta/armazena métricas), Grafana (dashboards), AlertManager (alertas para Slack/PagerDuty), Node Exporter (métricas de hardware dos Nodes — DaemonSet), kube-state-metrics (estado dos objetos K8s) e Prometheus Operator (gerencia configs via CRDs).',w:['O Prometheus sozinho não tem dashboard, alertas ou métricas de Node — é apenas um dos componentes.','As métricas coletadas vão muito além de CPU e memória: rede, disco, requisições HTTP, latência, saturação, erros...','O dashboard web é o Grafana — que é um dos componentes instalados junto com o stack.']}
+    },
+    {type:'mc',text:'Para que serve um ServiceMonitor no contexto do Prometheus Operator?',opts:['Para monitorar a saúde dos Services K8s via probe HTTP','Define declarativamente quais Services o Prometheus deve fazer scraping sem editar o prometheus.yml manualmente','Para criar Services automaticamente para cada Pod monitorado','É um substituto do kube-proxy para roteamento de métricas'],correct:1,
+     exp:{c:'ServiceMonitor é um CRD (Custom Resource Definition) do Prometheus Operator. Você cria um ServiceMonitor apontando para um Service, e o Operator reconfigura o Prometheus automaticamente para fazer scraping desse endpoint. Sem Operator, você teria que editar manualmente o prometheus.yml e recarregar o Prometheus a cada nova aplicação.',w:['Health checks de Services são feitos por probes (readiness/liveness), não por ServiceMonitors.','ServiceMonitors não criam Services — eles referenciam Services existentes.','kube-proxy é responsável por roteamento de tráfego via iptables/ipvs — não tem relação com métricas.']}
+    }
+  ],
+  d11: [
+    {type:'mc',text:'Qual a diferença entre um Helm Chart e uma Helm Release?',opts:['São sinônimos — apenas nomenclatura diferente','Chart é o pacote de templates reutilizável; Release é uma instância instalada de um Chart no cluster','Chart é a versão antiga; Release é a versão nova','Releases são somente para charts de produção'],correct:1,
+     exp:{c:'Chart é o código-fonte: um conjunto de templates YAML parametrizáveis + values.yaml + Chart.yaml. Release é a instância: o resultado de helm install meu-postgres bitnami/postgresql. Você pode instalar o mesmo Chart múltiplas vezes — cada instalação é uma Release independente com seu próprio nome, namespace e histórico de upgrades.',w:['São conceitos distintos e complementares — não sinônimos.','Versões são gerenciadas pelo campo version no Chart.yaml — não têm relação com o conceito de Chart vs Release.','Releases podem ser criadas para qualquer ambiente — dev, staging, prod.']}
+    },
+    {type:'mc',text:'Qual comando você usa para ver os valores padrão de um Helm chart antes de instalá-lo?',opts:['helm inspect chart bitnami/postgresql','helm show values bitnami/postgresql','helm get values meu-postgres','helm describe bitnami/postgresql'],correct:1,
+     exp:{c:'helm show values mostra o conteúdo do values.yaml padrão de um chart — todos os parâmetros configuráveis com seus valores defaults. Use isso para entender o que pode ser customizado antes de instalar. Para ver values de um release já instalado, use helm get values meu-postgres.',w:['helm inspect não é um subcomando válido do helm.','helm get values mostra os values de um RELEASE já instalado, não os defaults do chart.','helm describe não é um subcomando válido do helm — use helm show (chart, values, readme, crds).']}
+    }
+  ],
+  d12: [
+    {type:'mc',text:'Por que você deve criar ServiceAccounts específicas para cada aplicação ao invés de usar a "default"?',opts:['A SA default é deprecada no K8s moderno','Para aplicar o princípio de menor privilégio — cada app tem apenas as permissões que precisa; uma app comprometida não pode comprometer o cluster inteiro','Por performance — SAs específicas são mais rápidas','Para facilitar o debug de problemas de rede'],correct:1,
+     exp:{c:'A ServiceAccount default geralmente não tem permissões na API — mas por padrão tem o token automontado no Pod, que pode ser usado para autenticar na API K8s. Criar SAs específicas com apenas as permissões necessárias garante que uma aplicação comprometida tenha acesso limitado. Uma aplicação com cluster-admin comprometida pode deletar todos os Pods, vazar Secrets ou fazer qualquer coisa no cluster.',w:['A SA default não está deprecada — mas é uma prática ruim de segurança usá-la para aplicações.','Performance de autenticação na API K8s não é afetada pela ServiceAccount usada.','Debug de rede não tem relação com ServiceAccounts — é domínio de CNI, Services e Network Policies.']}
+    },
+    {type:'mc',text:'Qual o efeito de adicionar automountServiceAccountToken: false em um Pod?',opts:['O Pod não consegue se comunicar com outros Pods','O token da ServiceAccount não é montado automaticamente no filesystem do container — reduz superfície de ataque','O Pod é criado sem ServiceAccount associada','Desabilita o RBAC para este Pod'],correct:1,
+     exp:{c:'Por padrão, o K8s monta o token da ServiceAccount em /var/run/secrets/kubernetes.io/serviceaccount/token em todos os containers. Se a aplicação não precisa acessar a API K8s (a maioria das aplicações web não precisa), montar esse token é um risco desnecessário: um atacante que comprometer o container pode usar o token para acessar a API. automountServiceAccountToken: false elimina esse risco.',w:['Comunicação entre Pods é controlada por Services e Network Policies — não pelo ServiceAccount token.','O Pod ainda tem uma ServiceAccount associada — apenas o token não é montado no filesystem.','RBAC continua funcionando normalmente — apenas o token não está disponível no filesystem do container.']}
+    }
+  ],
+  d13: [
+    {type:'mc',text:'O que são imagens "Distroless" e qual a principal vantagem de segurança?',opts:['Imagens sem sistema de cores (grayscale) para economia de armazenamento','Imagens que contêm apenas a aplicação e suas dependências de runtime — sem shell, sem package manager, mínima superfície de ataque','Imagens sem tags — somente por digest SHA','Imagens comprimidas com algoritmo especial para menor tamanho'],correct:1,
+     exp:{c:'Distroless remove todo o software que não é estritamente necessário para rodar a aplicação: bash, sh, curl, apt, ferramentas de sistema. Resultado: imagens menores (~5MB vs ~200MB), dramaticamente menos CVEs (menos código = menos vulnerabilidades), e mesmo que um atacante consiga RCE, não tem shell para executar comandos interativos.',w:['O nome "distroless" refere-se à ausência de distribuição Linux completa — não tem relação com cores.','Todas as imagens podem ter tags ou serem referenciadas por digest — não é específico das distroless.','Distroless usa multi-stage builds para separar build de runtime — o resultado é menor, mas o mecanismo de compressão é o mesmo.']}
+    },
+    {type:'mc',text:'O que é o Trivy e como ele é usado em pipelines CI/CD?',opts:['Um Ingress Controller alternativo ao nginx','Um scanner open-source de vulnerabilidades em imagens de container que pode falhar o pipeline se CVEs críticos forem encontrados','Um gerenciador de certificados TLS alternativo ao cert-manager','Um scheduler alternativo ao kube-scheduler'],correct:1,
+     exp:{c:'Trivy (Aqua Security) escaneia imagens e reporta CVEs por severidade (CRITICAL, HIGH, MEDIUM, LOW). Com --exit-code 1 e --severity CRITICAL, o comando retorna exit code 1 se encontrar CVEs críticos — o que faz o pipeline CI/CD falhar. Isso garante que imagens vulneráveis não cheguem a produção.',w:['Trivy é um scanner de segurança — não tem relação com Ingress ou roteamento de rede.','Cert-Manager gerencia certificados TLS — Trivy é específico para vulnerabilidades em imagens.','Trivy não tem nenhuma relação com scheduling de Pods no K8s.']}
+    }
+  ],
+  d14: [
+    {type:'mc',text:'Por que o Flannel não é adequado para clusters que precisam de Network Policies?',opts:['Flannel é mais lento que outros CNIs','Flannel implementa a interface de rede mas NÃO implementa o enforcement de Network Policies — as regras são aceitas mas silenciosamente ignoradas','Flannel não suporta IPv4','Flannel tem limite de Pods por Node'],correct:1,
+     exp:{c:'NetworkPolicy é apenas uma definição no etcd — quem a implementa é o CNI plugin. O Flannel foca exclusivamente em conectividade de rede e não processa NetworkPolicy objects. Se você aplicar uma NetworkPolicy em um cluster com Flannel, ela aparecerá no kubectl get networkpolicy, mas não terá efeito nenhum. Use Calico, Cilium ou Weave Net para enforcement real.',w:['Performance do Flannel é comparável a outros CNIs para conectividade básica.','Flannel suporta IPv4 normalmente.','Flannel não tem limite específico de Pods por Node diferente de outros CNIs.']}
+    },
+    {type:'mc',text:'Ao aplicar um "default-deny-all" NetworkPolicy em um namespace, qual tráfego crítico você deve lembrar de permitir explicitamente?',opts:['Tráfego HTTPS na porta 443','Tráfego DNS na porta UDP 53 para o CoreDNS','Tráfego do kube-apiserver','Tráfego do etcd'],correct:1,
+     exp:{c:'Sem uma regra explícita de egress permitindo UDP 53, os Pods não conseguem resolver nomes DNS (como meu-service.default.svc.cluster.local). Tudo "quebra silenciosamente" — conexões falham com "could not resolve host" em vez de "connection refused". É o erro mais comum ao implementar default-deny.',w:['HTTPS na 443 é importante para comunicação com serviços externos, mas o tráfego DNS na 53 é mais crítico e mais frequentemente esquecido.','Tráfego do kube-apiserver geralmente não é iniciado pelos Pods de aplicação — é o kubelet que se comunica com a API.','Tráfego do etcd é somente entre componentes do control plane — Pods de aplicação não se comunicam diretamente com o etcd.']}
+    }
+  ],
+  d15: [
+    {type:'mc',text:'Qual a diferença entre os efeitos de Taint NoSchedule e NoExecute?',opts:['São idênticos — apenas nomes diferentes','NoSchedule impede novos Pods sem toleration; NoExecute também evicta Pods EXISTENTES sem toleration imediatamente','NoExecute é mais suave que NoSchedule','NoSchedule afeta o cluster todo; NoExecute afeta apenas um namespace'],correct:1,
+     exp:{c:'NoSchedule impede apenas o agendamento de NOVOS Pods sem a toleration — Pods existentes no Node antes do taint não são afetados. NoExecute é mais agressivo: além de bloquear novos Pods, EVICTA imediatamente os Pods existentes que não têm a toleration adequada. Use NoExecute quando precisar garantir que um Node fique completamente vazio de certos workloads.',w:['Os dois efeitos têm comportamentos completamente diferentes.','O grau de "força" é NoSchedule < PreferNoSchedule (em sentido inverso) < NoExecute (mais agressivo).','Taints são aplicados por Node — afetam apenas os Pods que vão para aquele Node específico.']}
+    },
+    {type:'mc',text:'Para garantir que duas réplicas de uma aplicação crítica nunca fiquem no mesmo Node, qual recurso usar?',opts:['Taint com NoSchedule no Node','Pod Anti-Affinity com requiredDuringSchedulingIgnoredDuringExecution','NodeSelector com regra exclusiva','DaemonSet com 2 réplicas'],correct:1,
+     exp:{c:'Pod Anti-Affinity com required (hard constraint) instrui o scheduler a nunca colocar dois Pods com os mesmos labels no mesmo Node (topologyKey: kubernetes.io/hostname). Isso garante que se um Node falhar, pelo menos uma réplica sobrevive em outro Node. Com preferred (soft), o scheduler tenta respeitar mas pode ignorar se não houver alternativa.',w:['Taint com NoSchedule no Node impediria TODO Pod sem toleration — não é seletivo para réplicas do mesmo app.','NodeSelector direciona Pods para Nodes específicos, mas não impede que duas réplicas vão para o mesmo Node.','DaemonSet garante 1 Pod por Node, mas não é para aplicações normais — é para agentes de infraestrutura.']}
+    }
+  ],
+  d16: [
+    {type:'mc',text:'Qual é o processo CORRETO para atualizar um cluster K8s de v1.28 para v1.29 com kubeadm?',opts:['Atualizar todos os Nodes simultaneamente','Atualizar o control plane primeiro, depois drenar e atualizar cada worker individualmente','Atualizar os workers primeiro, depois o control plane','Deletar e recriar o cluster na nova versão'],correct:1,
+     exp:{c:'O processo correto é: (1) atualizar kubeadm no control plane, (2) kubeadm upgrade apply, (3) atualizar kubelet/kubectl no control plane, (4) para cada worker: kubectl drain, atualizar kubeadm/kubelet/kubectl, kubeadm upgrade node, kubectl uncordon. A ordem importa: o control plane deve estar na versão nova antes dos workers, e o kubeadm deve ser atualizado antes do kubelet.',w:['Atualizar tudo simultaneamente pode tornar o cluster inacessível e é impossível detectar problemas por Node.','Workers dependem do control plane atualizado — atualizar workers primeiro pode causar incompatibilidades de API.','Recriar o cluster causa perda total de estado (a menos que você use GitOps e tenha backup do etcd) — nunca é a primeira opção.']}
+    },
+    {type:'mc',text:'O que o comando "kubectl drain node-01" faz e quando deve ser usado?',opts:['Limpa os logs dos Pods no node-01','Remove graciosamente todos os Pods do node-01 e marca o Node como unschedulable — usado antes de manutenção','Deleta permanentemente o Node do cluster','Força o reinício de todos os Pods no node-01'],correct:1,
+     exp:{c:'kubectl drain faz duas coisas: (1) marca o Node como "unschedulable" (equivalente a kubectl cordon), impedindo novos Pods de serem agendados nele, e (2) evicta graciosamente todos os Pods do Node, que serão recriados em outros Nodes pelo ReplicaSet/Deployment. Use antes de manutenção de Node (upgrade, reinicialização, hardware). Após a manutenção, use kubectl uncordon para reabilitar.',w:['Limpeza de logs é feita com kubectl logs ou pela rotação de logs do container runtime.','kubectl delete node remove o Node do cluster permanentemente — drain é temporário e reversível.','kubectl rollout restart reinicia Pods de um Deployment — drain opera no nível do Node inteiro.']}
+    },
+    {type:'mc',text:'O que é GitOps e qual problema ele resolve em relação ao kubectl apply manual?',opts:['É uma versão do Git específica para Kubernetes','É uma prática onde o Git é a única fonte de verdade do cluster — ferramentas como ArgoCD sincronizam automaticamente, garantindo auditoria, rastreabilidade e rollback via git revert','É um plugin do kubectl para operações em lote','É um sistema de backup automático baseado em Git'],correct:1,
+     exp:{c:'GitOps resolve os problemas do kubectl apply manual: sem rastreabilidade (quem aplicou o quê quando?), sem revisão (mudanças vão direto ao cluster sem PR review), sem rollback fácil. Com GitOps: cada mudança é um commit revisado (PR/MR), o histórico está no git log, rollback é um git revert, e ferramentas como ArgoCD garantem que o cluster está sempre sincronizado com o repositório.',w:['Git no contexto de GitOps é o sistema de controle de versão padrão — não uma versão especial.','ArgoCD/Flux são ferramentas de GitOps, não plugins do kubectl.','Backup do etcd é separado do GitOps — ambos são boas práticas mas independentes.']}
     }
   ],
 
