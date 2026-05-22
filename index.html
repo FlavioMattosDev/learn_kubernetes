@@ -48,6 +48,7 @@ code,pre,.mono{font-family:'JetBrains Mono',monospace;}
 .phase-dot{width:7px;height:7px;border-radius:50%;background:var(--border2);transition:all 0.3s;cursor:pointer;}
 .phase-dot.done{background:var(--green);box-shadow:0 0 5px var(--green);}
 .phase-dot.cur{background:var(--cyan);box-shadow:0 0 5px var(--cyan);}
+.phase-dot.visited{background:rgba(57,208,212,0.45);box-shadow:0 0 4px rgba(57,208,212,0.4);}
 
 /* ─── MAIN ─── */
 #app{max-width:860px;margin:0 auto;padding:32px 20px 88px;}
@@ -260,6 +261,70 @@ h1.hero-title{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.0
   .cert-grid{grid-template-columns:1fr;}
   h1.hero-title{font-size:1.9rem;}
 }
+
+/* ─── LIGHT THEME ─── */
+body.light {
+  --bg:#f4f6f9;
+  --bg2:#ffffff;
+  --bg3:#eef1f5;
+  --bg4:#e4e8ef;
+  --border:#d0d7e0;
+  --border2:#b8c2cf;
+  --text:#1a2133;
+  --text2:#3d4f68;
+  --text3:#7a8fa8;
+  --blue:#1a6fcc;
+  --blue2:#1558a8;
+  --cyan:#0d8fa0;
+  --green:#1a7a35;
+  --yellow:#8a6200;
+  --orange:#a04010;
+  --red:#c0291f;
+  --purple:#6b3fbc;
+  --pink:#b03080;
+}
+body.light .code-wrap,
+body.light .yaml-preview { background:#f8f9fc; border-color:#d0d7e0; }
+body.light .code-wrap pre { color:#1a2133; }
+body.light .kw  { color:#c0291f; }
+body.light .str { color:#1a6fcc; }
+body.light .num { color:#0d6e8a; }
+body.light .cm  { color:#7a8fa8; }
+body.light .key { color:#1a7a35; }
+body.light .val { color:#a04010; }
+body.light .fn  { color:#6b3fbc; }
+body.light #progress-bar-wrapper { background:rgba(244,246,249,0.97); }
+body.light #header { background:rgba(244,246,249,0.96); }
+body.light .score-donut::after { background:var(--bg2); }
+body.light .callout.tip  { background:rgba(13,143,160,0.07); }
+body.light .callout.warn { background:rgba(138,98,0,0.07); }
+body.light .callout.danger { background:rgba(192,41,31,0.07); }
+body.light .callout.note { background:rgba(26,111,204,0.07); }
+body.light .callout.success { background:rgba(26,122,53,0.07); }
+body.light .data-table th { background:var(--bg3); }
+
+/* ─── THEME TOGGLE BUTTON ─── */
+#theme-toggle {
+  position:fixed;
+  bottom:48px;
+  right:16px;
+  z-index:300;
+  width:40px;height:40px;
+  border-radius:50%;
+  border:1px solid var(--border2);
+  background:var(--bg3);
+  color:var(--text2);
+  font-size:1.1rem;
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all 0.2s;
+  box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+#theme-toggle:hover {
+  background:var(--bg4);
+  color:var(--text);
+  transform:scale(1.08);
+}
 </style>
 </head>
 <body>
@@ -313,6 +378,8 @@ h1.hero-title{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.0
     <div class="phase-dot" id="dot15" onclick="nav('d16')" title="Day 16"></div>
   </div>
 </div>
+
+<button id="theme-toggle" onclick="toggleTheme()" title="Alternar tema claro/escuro">🌙</button>
 
 <main id="app">
 
@@ -3171,11 +3238,11 @@ function nav(id) {
     if (b.getAttribute('onclick') === "nav('" + id + "')") b.classList.add('active');
   });
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Track visited days for progress
+  if (dayOrder.includes(id)) visited.add(id);
+  updateProgress(id);
   if (id === 'interview') renderIQ();
   if (id === 'projects') renderProjects();
-  // trigger quiz render for all days
-  const allDays = ['d1','d2','d3','d4','d5','d6','d7','d8','d9','d10','d11','d12','d13','d14','d15','d16'];
-  if (allDays.includes(id)) { /* quiz rendered on demand via tab() */ }
 }
 
 function tab(event, phase, name) {
@@ -3192,23 +3259,65 @@ function tab(event, phase, name) {
 // PROGRESS
 // ═══════════════════════════════════════════════════════════════
 const scores = {};
-function updateProgress() {
-  const days = ['d1','d2','d3','d4','d5','d6','d7','d8','d9','d10','d11','d12','d13','d14','d15','d16'];
-  let done = 0;
-  days.forEach((d, i) => {
+// Track visited days and quiz scores separately
+const visited = new Set();
+const dayOrder = ['d1','d2','d3','d4','d5','d6','d7','d8','d9','d10','d11','d12','d13','d14','d15','d16'];
+
+function updateProgress(currentId) {
+  let quizDone = 0;
+  let visitedCount = 0;
+  dayOrder.forEach((d, i) => {
+    const dot = document.getElementById('dot' + i);
+    if (!dot) return;
     if (scores[d] !== undefined) {
-      done++;
-      const dot = document.getElementById('dot' + i);
-      if (dot) { dot.className = 'phase-dot done'; }
+      // Quiz completed - green
+      quizDone++;
+      visitedCount++;
+      dot.className = 'phase-dot done';
+      dot.title = 'Day ' + (i+1) + ' — Quiz concluído (' + scores[d] + '%)';
+    } else if (visited.has(d)) {
+      // Visited but quiz not done - cyan/active
+      visitedCount++;
+      dot.className = 'phase-dot visited';
+      dot.title = 'Day ' + (i+1) + ' — Em progresso';
+    } else {
+      dot.className = d === currentId ? 'phase-dot cur' : 'phase-dot';
+      dot.title = 'Day ' + (i+1);
     }
   });
-  const pct = Math.round((done / days.length) * 100);
+  // Progress = 50% for visiting + 50% for completing quiz
+  // Simpler: visited days count as 0.5, quiz-completed count as 1.0
+  const total = dayOrder.length;
+  const score = (visitedCount * 0.5 + quizDone * 0.5) / total * 100;
+  const pct = Math.round(score);
   const fill = document.getElementById('pfill');
   const ppct = document.getElementById('ppct');
   if (fill) fill.style.width = pct + '%';
   if (ppct) ppct.textContent = pct + '%';
 }
 updateProgress();
+
+// ═══════════════════════════════════════════════════════════════
+// THEME TOGGLE
+// ═══════════════════════════════════════════════════════════════
+function toggleTheme() {
+  const isLight = document.body.classList.toggle('light');
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.textContent = isLight ? '🌙' : '☀️';
+  try { localStorage.setItem('k8s-theme', isLight ? 'light' : 'dark'); } catch(e){}
+}
+
+// Restore saved theme on page load
+(function() {
+  try {
+    const saved = localStorage.getItem('k8s-theme');
+    if (saved === 'light') {
+      document.body.classList.add('light');
+      const btn = document.getElementById('theme-toggle');
+      if (btn) btn.textContent = '🌙';
+    }
+  } catch(e) {}
+})();
 
 // ═══════════════════════════════════════════════════════════════
 // QUIZ DATA
